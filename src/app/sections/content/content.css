@@ -68,11 +68,22 @@
     }
   }
   .bottombackground {
+    min-height: 400px;
     padding-top: 10px;
     h2 {
         font-size: 30px;
-      }
+    }
     .photos {
       margin-top: -60px
+    }
+    .btn {
+      font-size: 15px;
+      min-width: 100px;
+      padding: 17px 18px;
+    }
+    .successmsg,
+    .errormsg {
+      width: 300px;
+    }
   }
 }
