@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://picconnectapi-bbbzgaccfravf3es.westus3-01.azurewebsites.net',
+  apiUrl: 'https://picconnectapi-a9fdgqaygbd3b3ea.westus3-01.azurewebsites.net',
 };
