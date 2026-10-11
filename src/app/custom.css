@@ -1,0 +1,75 @@
+body {
+  background-color: white
+}
+
+div.content {
+  padding: 0;
+  margin: 0;
+}
+
+/* Generic Reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol {
+  font-family: 'Roboto', Times, serif;
+  color: #000;
+  padding: 0;
+  margin: 0;
+}
+
+/* Form */ 
+form{
+  width: 80% !important;
+}   
+button:focus {
+  outline: 0;
+}
+
+.error-message {
+  font-size: 18px;
+  color: #c70000;
+  margin-bottom: 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid #c73800 !important;
+}
+
+input, select, textarea {
+  border: 1px solid #969696 !important;
+  font-family: 'Roboto', Times, serif;
+  padding: 14px !important;
+  margin: 10px 0px 0px 0px !important;  
+  font-size: 20px !important;
+  color:rgb(148, 148, 148);
+}
+
+input::placeholder,
+textarea::placeholder, 
+select::placeholder {
+  font-family: 'Roboto' !important;
+  color: rgb(184, 184, 184) !important;
+}
+
+.button {
+  color: white;
+  font-family: 'Roboto';
+  font-size: 26px;
+  background-color: rgb(3, 148, 216);
+  border: none;
+}
+
+button:hover {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* End Form */

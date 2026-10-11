@@ -1,0 +1,63 @@
+.topbackground{
+  background-color: rgb(3, 148, 216);
+  min-height: 450px;
+}
+
+.topheader {
+  h1 {
+    color: white;
+    font-size: 40px;
+    font-weight:400;
+    letter-spacing: -1.5px;
+  }
+  p {
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 24px;
+  }
+}
+
+.middlebackground{
+  .bar {
+      height: 35px;
+      background-color: rgb(0, 131, 192);
+    }
+}
+
+.bottombackground{
+  padding-top: 150px;
+  h2 {
+      font-size: 40px;
+      font-weight: 400;
+      letter-spacing: -1.5px;
+    }
+  
+  p {
+      font-size: 20px;
+      font-weight: 200;
+      line-height: 24px;
+    }
+    .photos{
+      margin-top: -350px
+    }
+}
+
+@media screen and (max-width: 768px) {
+.topheader {
+    h1 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .bottombackground {
+    padding-top: 10px;
+    h2 {
+        font-size: 30px;
+      }
+    .photos {
+      margin-top: -60px
+  }
+}
