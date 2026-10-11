@@ -47,13 +47,27 @@
     <div class="row">
       <div class="col-12">
         <div>
-          <input
-            style="width: 460px"
-            class="me-2"
-            type="text"
-            placeholder="Enter your email address for our launch date"
-          />
-          <input class="button" type="button" value="Join Us!" />
+          <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+            <input
+              style="width: 460px"
+              class="me-2"
+              type="text"
+              placeholder="Enter your email address for our launch date"
+            />
+            <!-- Disable submit button if form rules aren't met -->
+            <button type="submit" [disabled]="signupForm.invalid" class="btn btn-primary mt-4">
+              Join Us!
+            </button>
+
+            @if (showSuccess == true) {
+              <div class="successmsg">You were added to the signup list!</div>
+            }
+            @if (showError == true) {
+              <div class="errormsg">{{ errorMsg }}.</div>
+            }
+
+            <input class="button" type="submit" value="Join Us!" />
+          </form>
         </div>
       </div>
     </div>
