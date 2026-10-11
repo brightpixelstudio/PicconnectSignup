@@ -26,7 +26,7 @@
 }
 
 .bottombackground{
-  padding-top: 150px;
+  padding-top: 50px;
   h2 {
       font-size: 40px;
       font-weight: 400;
@@ -38,9 +38,24 @@
       font-weight: 200;
       line-height: 24px;
     }
-    .photos{
-      margin-top: -350px
+  .photos {
+    margin-top: -230px
+  }
+  .btn {
+    background-color: rgb(3, 148, 216);
+    color: white;
+    font-size: 20px;
+    padding: 14px 20px;
+    margin-top: 8px;
+    border-radius: 0px;
+  }
+  .btn:hover {
+    background-color: rgb(43, 176, 238) !important;
+    padding: 15px 21px;
     }
+  input{
+    border-radius: 0px;
+  }
 }
 
 @media screen and (max-width: 768px) {

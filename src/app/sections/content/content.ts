@@ -34,6 +34,10 @@ export class Content implements OnInit {
     });
   }
 
+  get f() {
+    return this.signupForm.controls;
+  }
+
   onSubmit() {
     this.showSuccess = false;
     this.showError = false;

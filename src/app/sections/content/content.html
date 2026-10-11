@@ -46,29 +46,40 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <div>
-          <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+          <!-- Input and button on the same line -->
+          <div class="d-flex align-items-center gap-2">
             <input
-              style="width: 460px"
-              class="me-2"
-              type="text"
+              style="width: 500px"
+              type="email"
+              id="email"
+              name="email"
+              required
+              formControlName="email"
               placeholder="Enter your email address for our launch date"
+              class="form-control"
             />
-            <!-- Disable submit button if form rules aren't met -->
-            <button type="submit" [disabled]="signupForm.invalid" class="btn btn-primary mt-4">
+
+            <button type="submit" [disabled]="signupForm.invalid" class="btn btn-primary">
               Join Us!
             </button>
+          </div>
+
+          <!-- Messages on new lines below the input and button -->
+          <div class="mt-2">
+            @if (f['email']?.invalid && f['email']?.touched) {
+              <div class="error-message">Please enter a valid email address.</div>
+            }
 
             @if (showSuccess == true) {
               <div class="successmsg">You were added to the signup list!</div>
             }
+
             @if (showError == true) {
               <div class="errormsg">{{ errorMsg }}.</div>
             }
-
-            <input class="button" type="submit" value="Join Us!" />
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
